@@ -1,9 +1,9 @@
 import React from 'react'
 
-function todayForecast() {
+function TodayForecast() {
   return (
-    <div>todayForecast</div>
+    <div>TodayForecast</div>
   )
 }
 
-export default todayForecast
+export default TodayForecast
