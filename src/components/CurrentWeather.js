@@ -41,11 +41,8 @@ const buttonListener = () => {
      </div>
      
      {weather && weather.current&&
-       <img className='' src={weather.current.condition.icon} alt="" />
+       <img src={weather.current.condition.icon} alt="" />
        }
-     
-       
-       
      </div>
      
     </div>
