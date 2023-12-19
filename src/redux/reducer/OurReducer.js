@@ -29,7 +29,6 @@ export const fetchData=(city)=>async(dispatch)=>{
       try {
           const response = await axios.request(options);
           dispatch(setWeather(response.data));
-          console.log(response.data);
       } catch (error) {
           console.error(error);
       }
