@@ -18,8 +18,10 @@ const slice=createSlice({
 export const fetchData=(city)=>async(dispatch)=>{
     const options = {
         method: 'GET',
-        url: 'https://weatherapi-com.p.rapidapi.com/current.json',
-        params: {q: city},
+        url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
+        params: {q: city,
+        days: '3',
+        },
         headers: {
           'X-RapidAPI-Key': '89f3b4b50bmsh3fce86eb34626d7p1383b7jsn83f563f32003',
           'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'

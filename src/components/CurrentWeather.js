@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useDispatch} from 'react-redux'
 import { fetchData } from '../redux/reducer/OurReducer'
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 function CurrentWeather() {
 
 const dispatch=useDispatch()
@@ -17,6 +18,11 @@ const handleInput = (e) => {
 const buttonListener = () => {
  dispatch(fetchData(city))
 }
+
+useEffect(() => {
+  dispatch(fetchData("Tunceli"))
+}, [])
+
 
   return (
     <div className='bg-slate-900 h-36'>

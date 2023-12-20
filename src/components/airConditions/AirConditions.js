@@ -2,8 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { FaTemperatureLow } from "react-icons/fa";
 import { WiCloudyWindy } from "react-icons/wi";
-import { WiHumidity } from "react-icons/wi";
 import { WiDaySunny } from "react-icons/wi";
+import { IoRainyOutline } from "react-icons/io5";
 
 function AirConditions() {
   const {weather} = useSelector((state) => state.weather);
@@ -43,11 +43,11 @@ function AirConditions() {
        </div> 
        <div className='flex flex-col ml-10 mt-3'> 
       <div className='flex gap-1'>
-      <WiHumidity className='opacity-50 text-gray-400'/>
-      <p className='flex text-sm opacity-70 font-normal'>Humidity </p>
+      <IoRainyOutline className='opacity-50 text-gray-400'/>
+      <p className='flex text-sm opacity-70 font-normal'>Chance of Rain </p>
       </div>
         <div className='text-3xl ml-7'>
-        {weather && weather.current&&<h1>%{weather.current.humidity}</h1>}
+        {weather && weather.current&&<h1>%{weather.forecast.forecastday[0].day.daily_chance_of_rain}</h1>}
         </div>
        </div> 
       </div>
