@@ -10,7 +10,7 @@ function AirConditions() {
 
   return (
     <>
-    <h1 className='m-3 text-sm tracking-tighter font-thin'>AirConditions</h1>
+    <h1 className='m-3 text-sm tracking-tighter font-thin md'>AirConditions</h1>
     <div>
       <div className='grid grid-cols-2 grid-rows-2 h-32'>
        <div className='flex flex-col ml-10'> 

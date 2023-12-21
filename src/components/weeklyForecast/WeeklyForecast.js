@@ -15,7 +15,7 @@ function WeeklyForecast() {
             <div key={index} className='text-sm flex justify-center'>
               <h2 >{day.date}</h2>
               <img className="w-16 h-16 mx-5" src={day.day.condition.icon} alt={day.date} />
-              <div className="opacity-70 ">Max Temp {day.day.maxtemp_c}°C</div>
+              <div className="opacity-70 mx-5">Max Temp {day.day.maxtemp_c}°C</div>
               <div className="opacity-70">Min Temp {day.day.mintemp_c}°C</div>
             </div>
           ))}
