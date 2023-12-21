@@ -26,8 +26,8 @@ function TodayForecast() {
       <div>
         <div className="grid grid-cols-5 h-32 ml-3 gap-4 tracking-tighter">
           {filteredForecast &&
-            filteredForecast.map((hour, index) => (
-              <div className=" border-r pr-3" key={index}>
+            filteredForecast.map((hour) => (
+              <div className=" border-r pr-3">
                 <div className=" ml-3 opacity-70">{hour.time}</div>
                 <img className="mt-3" src={hour.icon} alt={hour.time} />
                 <div className="ml-3 mt-3 opacity-70">{hour.temp_c}°C</div>
